@@ -4,8 +4,6 @@ void main() {
   print('My Favorite Hobbies:');
   print('Initial list: ${favoriteHobbies.toString()}');
 
-
-
   favoriteHobbies.add('Writing poem');
   favoriteHobbies.add('Reading Self help books');
   favoriteHobbies.add('Listening Mezmur');
