@@ -1,4 +1,4 @@
-main() {
+void main() {
   String name = 'Samrawit Dawit';
   int age = 20;
   String favorite_color = 'White';
