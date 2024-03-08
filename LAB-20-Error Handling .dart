@@ -1,12 +1,11 @@
 double divide(double dividend, double divisor) {
   try {
+    if (divisor == 0) {
+      throw Exception('Error: A number cannot be divided by 0.');
+    }
     return dividend / divisor;
   } catch (e) {
-    if (e is DivisionByZeroError) {
-      print('Error: A number can not be devided by 0.');
-    } else {
-      print('Something went wrong.');
-    }
+    print(e);
     return double.nan;
   }
 }
