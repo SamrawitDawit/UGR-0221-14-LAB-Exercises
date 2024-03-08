@@ -1,3 +1,4 @@
+import 'dart:io';
 void main() {
   const int c = 299792458;
   stdout.writeln('Insert distance: ');
