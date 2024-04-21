@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
               visible: postsProvider.posts.isEmpty,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, // Set the background color of the button
+                  backgroundColor: Colors.blue,
                 ),
                 onPressed: () {
                   postsProvider.fetchPosts();
