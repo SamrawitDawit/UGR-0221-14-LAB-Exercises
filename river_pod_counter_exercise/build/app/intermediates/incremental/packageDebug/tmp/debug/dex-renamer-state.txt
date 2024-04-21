@@ -1,0 +1,4 @@
+#Sun Apr 21 11:09:41 EAT 2024
+base.0=C\:\\Users\\samri\\projects\\UGR-0221-14-LAB-Exercises\\river_pod_counter_exercise\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

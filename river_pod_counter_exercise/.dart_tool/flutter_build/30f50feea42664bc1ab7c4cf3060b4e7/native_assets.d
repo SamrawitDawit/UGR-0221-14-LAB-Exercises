@@ -1,0 +1,1 @@
+ C:\\Users\\samri\\projects\\UGR-0221-14-LAB-Exercises\\river_pod_counter_exercise\\.dart_tool\\flutter_build\\30f50feea42664bc1ab7c4cf3060b4e7\\native_assets.yaml: 
