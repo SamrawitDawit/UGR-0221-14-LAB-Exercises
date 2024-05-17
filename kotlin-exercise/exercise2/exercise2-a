@@ -1,0 +1,31 @@
+
+
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    try {
+        print("Enter the length of side 1: ")
+        val side1 = scanner.nextDouble()
+
+        print("Enter the length of side 2: ")
+        val side2 = scanner.nextDouble()
+
+        print("Enter the length of side 3: ")
+        val side3 = scanner.nextDouble()
+
+        fun determineTriangleType(a: Double, b: Double, c: Double): String {
+            return when {
+                a == b && b == c -> "Equilateral"
+                a == b || b == c || a == c -> "Isosceles"
+                else -> "Scalene"
+            }
+        }
+
+        val triangleType = determineTriangleType(side1, side2, side3)
+        println("The triangle with sides $side1, $side2, and $side3 is $triangleType.")
+    } catch (e: Exception) {
+        println("Invalid input. Please enter numerical values.")
+    }
+}
