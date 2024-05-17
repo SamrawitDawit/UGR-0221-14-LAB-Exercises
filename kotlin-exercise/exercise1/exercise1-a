@@ -7,11 +7,4 @@ fun main() {
     val current_time: String = LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"))
     println("Current Time: $current_time")
 
-
-    val temp: Double = 25.5
-    println("Current Temperature: $temp°C")
-
-    
-    val grade: Char = 'A'
-    println("Student's Grade: $grade")
 }
