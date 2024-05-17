@@ -1,0 +1,33 @@
+data class Item(val name: String, val price: Double)
+
+class ShoppingCart {
+    private val items = mutableListOf<Item>()
+
+    fun addItem(item: Item) {
+        items.add(item)
+    }
+
+    fun removeItem(item: Item) {
+        items.remove(item)
+    }
+
+    fun calculateTotalPrice(): Double {
+        var totalPrice = 0.0
+        items.forEach { totalPrice += it.price }
+        return totalPrice
+    }
+}
+
+fun main() {
+    val cart = ShoppingCart()
+
+    cart.addItem(Item("Laptop", 1000.0))
+    cart.addItem(Item("Mouse", 30.0))
+    cart.addItem(Item("Keyboard", 50.0))
+
+    println("Total Price: ${cart.calculateTotalPrice()}")
+
+    cart.removeItem(Item("Mouse"))
+
+    println("Total Price after removing Mouse: ${cart.calculateTotalPrice()}")
+}
