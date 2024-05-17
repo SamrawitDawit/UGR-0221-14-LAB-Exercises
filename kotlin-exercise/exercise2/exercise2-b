@@ -1,14 +1,4 @@
-
-import java.util.Scanner
-
 fun main() {
-    val scanner = Scanner(System.`in`)
-
-    print("Enter the number of hours worked: ")
-    val hoursWorked = scanner.nextDouble()
-
-    print("Enter the hourly rate: ")
-    val hourlyRate = scanner.nextDouble()
 
     fun calculateSalary(hoursWorked: Double, hourlyRate: Double): Double {
         val regularHours = if (hoursWorked > 40) 40 else hoursWorked
@@ -18,6 +8,9 @@ fun main() {
         return regularPay + overtimePay
     }
 
+    val hoursWorked = 45.0
+    val hourlyRate = 20.0
+
     val totalSalary = calculateSalary(hoursWorked, hourlyRate)
-    println("The total salary for $hoursWorked hours at $$hourlyRate per hour is $$totalSalary.")
+    println(totalSalary)
 }
