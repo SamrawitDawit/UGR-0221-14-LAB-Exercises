@@ -1,0 +1,9 @@
+import java.time.LocalTime
+import java.time.format.DateTimeFormatter
+
+fun main() {
+
+    val grade: Char = 'A'
+    println("Student's Grade: $grade")
+
+}    
