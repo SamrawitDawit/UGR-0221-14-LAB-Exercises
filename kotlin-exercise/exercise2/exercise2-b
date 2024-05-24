@@ -1,0 +1,16 @@
+fun main() {
+
+    fun calculateSalary(hoursWorked: Double, hourlyRate: Double): Double {
+        val regularHours = if (hoursWorked > 40) 40 else hoursWorked
+        val overtimeHours = if (hoursWorked > 40) hoursWorked - 40 else 0.0
+        val regularPay = regularHours * hourlyRate
+        val overtimePay = overtimeHours * hourlyRate * 1.5
+        return regularPay + overtimePay
+    }
+
+    val hoursWorked = 45.0
+    val hourlyRate = 20.0
+
+    val totalSalary = calculateSalary(hoursWorked, hourlyRate)
+    println(totalSalary)
+}

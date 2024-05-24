@@ -1,0 +1,16 @@
+fun main() {
+    fun determineTriangleType(a: Double, b: Double, c: Double): String {
+        return when {
+            a == b && b == c -> "Equilateral"
+            a == b || b == c || a == c -> "Isosceles"
+            else -> "Scalene"
+        }
+    }
+
+    val side1 = 5.0
+    val side2 = 5.0
+    val side3 = 5.0
+
+    val triangleType = determineTriangleType(side1, side2, side3)
+    println(triangleType)
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+
+    print("Enter the first number: ")
+    val num1 = scanner.nextDouble()
+
+    print("Enter the second number: ")
+    val num2 = scanner.nextDouble()
+
+    print("Enter the third number: ")
+    val num3 = scanner.nextDouble()
+
+    fun findLargest(a: Double, b: Double, c: Double): Double {
+        return if (a > b) {
+            if (a > c) a else c
+        } else {
+            if (b > c) b else c
+        }
+    }
+
+    val largest = findLargest(num1, num2, num3)
+    println("The largest number among $num1, $num2, and $num3 is $largest.")
+}

@@ -1,0 +1,16 @@
+fun hasUniqueCharacters(str: String): Boolean {
+    val charSet = mutableSetOf<Char>()
+    for (char in str) {
+        if (!charSet.add(char)) {
+            return false
+        }
+    }
+    return true
+}
+
+fun main() {
+    val testString1 = "Kotlin"
+    val testString2 = "Practice"
+    println(hasUniqueCharacters(testString1))
+    println(hasUniqueCharacters(testString2))
+}
